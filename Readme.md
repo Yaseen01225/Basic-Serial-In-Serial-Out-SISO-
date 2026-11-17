@@ -62,8 +62,8 @@ The project is intended to help learners understand:
 
 | File | Description |
 |---|---|
-| `siso(1).v` | Supplied synthesizable RTL design containing module `siso_4bit`. |
-| `siso_tb(1).v` | Supplied simulation testbench containing module `siso_tb`. |
+| `siso.v` | Supplied synthesizable RTL design containing module `siso_4bit`. |
+| `siso_tb.v` | Supplied simulation testbench containing module `siso_tb`. |
 | `README.md` | Project overview, architecture, operating principle, verification notes and run instructions. |
 | `siso_tb.vcd` | VCD waveform output requested by the testbench when the simulator supports `$dumpfile` and `$dumpvars`. |
 
@@ -426,7 +426,7 @@ vvp siso_sim
 If the uploaded filenames are retained with parentheses, use:
 
 ```bash
-iverilog -o siso_sim "siso(1).v" "siso_tb(1).v"
+iverilog -o siso_sim "siso.v" "siso_tb.v"
 vvp siso_sim
 ```
 
