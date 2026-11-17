@@ -507,11 +507,11 @@ These values are derived from the RTL shift expression and the input sequence. T
 
 ## 13. Important Source-Code Notes
 
-The supplied RTL and testbench contain SIPO wording in some headers and console messages, including references to a parallel output. The project title in this README follows the clarified intended function: SISO.
+The supplied RTL and testbench contain SISO wording in some headers and console messages, including references to a parallel output. The project title in this README follows the clarified intended function: SISO.
 
 For consistency, consider updating the comments and display text in both source files:
 
-- Replace “Serial-In Parallel-Out (SIPO)” with “Serial-In Serial-Out (SISO)”.
+- Replace “Serial-In Serial-Out (SISO)” with “Serial-In Serial-Out (SISO)”.
 - Describe `so[3:0]` as the **4-bit internal-state observation bus**.
 - Describe `so[3]` as the **serial output**.
 - Keep the existing four-bit state checks because they help verify and visualize every shift stage.
